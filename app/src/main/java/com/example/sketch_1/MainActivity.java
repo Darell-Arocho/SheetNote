@@ -21,4 +21,13 @@ public class MainActivity extends AppCompatActivity {
     {
         canvasView.clearCanvas();
     }
+
+    public void increasePenSize(View v) {
+        canvasView.increasePenSize();
+    }
+
+    public void decreasePenSize(View v) {
+        canvasView.decreasePenSize();
+    }
 }
+

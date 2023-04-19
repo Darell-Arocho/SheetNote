@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
-<com.example.sketch_1.CanvasView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:id="@+id/mycanvas"
-    />
+
+    <com.example.sketch_1.CanvasView
+        android:id="@+id/mycanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-5dp" />
 
     <Button
         android:id="@+id/button"
@@ -19,10 +18,31 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="7dp"
         android:onClick="clearCanvas"
         android:text="Clear Canvas" />
 
+    <Button
+        android:id="@+id/btn_increase_pen_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="274dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="increasePenSize"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btn_decrease_pen_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="decreasePenSize"
+        android:text="-" />
 
 </RelativeLayout>

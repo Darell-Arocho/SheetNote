@@ -73,6 +73,18 @@ public class CanvasView extends View
         invalidate();
     }
 
+    public void increasePenSize() {
+        float currentStrokeWidth = paint.getStrokeWidth();
+        float newStrokeWidth = currentStrokeWidth + 2f;
+        paint.setStrokeWidth(newStrokeWidth);
+    }
+
+    public void decreasePenSize() {
+        float currentStrokeWidth = paint.getStrokeWidth();
+        float newStrokeWidth = currentStrokeWidth - 2f;
+        paint.setStrokeWidth(newStrokeWidth);
+    }
+
     public void upTouch()
     {
         path.lineTo(mX, mY);
