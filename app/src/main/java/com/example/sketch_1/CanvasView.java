@@ -65,7 +65,7 @@ public class CanvasView extends View
         }
     }
 
-    // to clear the canvas
+    // Function to clear the canvas
 
     public void clearCanvas()
     {
@@ -73,6 +73,7 @@ public class CanvasView extends View
         invalidate();
     }
 
+    // Functions for increasing and decreasing pen size
     public void increasePenSize() {
         float currentStrokeWidth = paint.getStrokeWidth();
         float newStrokeWidth = currentStrokeWidth + 2f;

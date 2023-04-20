@@ -64,5 +64,8 @@ public class MainActivity extends AppCompatActivity {
     public void changePenColorPink(View v) {
         canvasView.setPenColor(Color.rgb(255, 192, 203));
     }
+
+    public void changePenColorCyan(View v) { canvasView.setPenColor(Color.rgb(89, 193, 189));}
+
 }
 

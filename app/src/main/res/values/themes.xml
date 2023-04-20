@@ -1,8 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Sketch_1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         Customize your light theme here.
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/purple</item>
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorOnSecondary">@color/orange</item>
+<!--        <item name="colorPrimary">@color/light_green</item>-->
+<!--        <item name="colorPrimary">@color/dark_green</item>-->
+<!--        <item name="colorPrimary">@color/yellow</item>-->
+<!--        <item name="colorPrimary">@color/pink</item>-->
+
+
+
     </style>
 
     <style name="Theme.Sketch_1" parent="Base.Theme.Sketch_1" />
