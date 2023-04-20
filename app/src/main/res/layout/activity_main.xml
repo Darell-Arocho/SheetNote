@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-5dp" />
+        android:layout_marginTop="-4dp" />
 
     <Button
         android:id="@+id/button"
@@ -44,5 +44,89 @@
         android:layout_marginBottom="8dp"
         android:onClick="decreasePenSize"
         android:text="-" />
+
+    <Button
+        android:id="@+id/button_black_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="590dp"
+        android:background="@drawable/round_btn_black"
+        android:onClick="changePenColorBlack"
+        android:text="Black" />
+
+    <Button
+        android:id="@+id/button_blue_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="536dp"
+        android:background="@drawable/round_btn_blue"
+        android:onClick="changePenColorBlue"
+        android:text="Blue" />
+
+    <Button
+        android:id="@+id/button_red_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="481dp"
+        android:background="@drawable/round_btn_red"
+        android:onClick="changePenColorRed"
+        android:text="Red" />
+
+    <Button
+        android:id="@+id/button_orange_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="425dp"
+        android:background="@drawable/round_btn_orange"
+        android:onClick="changePenColorOrange"
+        android:text="Orange" />
+
+    <Button
+        android:id="@+id/button_yellow_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="367dp"
+        android:background="@drawable/round_btn_yellow"
+        android:onClick="changePenColorYellow"
+        android:text="Yellow" />
+
+    <Button
+        android:id="@+id/button_dark_green_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="312dp"
+        android:background="@drawable/round_btn_dark_green"
+        android:onClick="changePenColorDarkGreen"
+        android:text="Dark Green" />
+
+    <Button
+        android:id="@+id/button_pink_pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="254dp"
+        android:background="@drawable/round_btn_pink"
+        android:onClick="changePenColorPink"
+        android:text="Pink" />
 
 </RelativeLayout>

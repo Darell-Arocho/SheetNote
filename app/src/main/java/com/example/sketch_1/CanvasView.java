@@ -85,6 +85,12 @@ public class CanvasView extends View
         paint.setStrokeWidth(newStrokeWidth);
     }
 
+    // Handles all color changes from this single method function
+    public void setPenColor(int color) {
+        paint.setColor(color);
+    }
+
+
     public void upTouch()
     {
         path.lineTo(mX, mY);
