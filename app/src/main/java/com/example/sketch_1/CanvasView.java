@@ -36,6 +36,35 @@ public class CanvasView extends View
 
     }
 
+    public void changePenColor(String color) {
+        switch (color) {
+            case "Black":
+                paint.setColor(Color.BLACK);
+                break;
+            case "Blue":
+                paint.setColor(Color.BLUE);
+                break;
+            case "Red":
+                paint.setColor(Color.RED);
+                break;
+            case "Orange":
+                paint.setColor(Color.rgb(255, 165, 0));
+                break;
+            case "Yellow":
+                paint.setColor(Color.YELLOW);
+                break;
+            case "Dark Green":
+                paint.setColor(Color.rgb(0, 100, 0));
+                break;
+            case "Pink":
+                paint.setColor(Color.rgb(255, 192, 203));
+                break;
+            case "Cyan":
+                paint.setColor(Color.CYAN);
+                break;
+        }
+    }
+
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -125,4 +154,7 @@ public class CanvasView extends View
         }
         return true;
     }
+
+
+
 }
