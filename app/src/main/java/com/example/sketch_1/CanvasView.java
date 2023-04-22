@@ -12,17 +12,24 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CanvasView extends View
 {
     Context context;
-        int width, height;
-        Bitmap bitmap;
-    Paint paint;
-    Path path;
-    Canvas canvas;
-    float mX, mY;
-    static final float TOLERANCE = 4;
+    private int width, height;
+    private Bitmap bitmap;
+    private Paint paint;
+    private Path path;
+    private Canvas canvas;
+    private float mX, mY;
+    private static final float TOUCH_TOLERANCE = 4;
 
+    // Add variables to keep track of previous paths and their colors
+    private List<Path> paths = new ArrayList<>();
+    private List<Integer> colors = new ArrayList<>();
+    private int currentColor = Color.BLACK;
     public CanvasView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
@@ -39,28 +46,28 @@ public class CanvasView extends View
     public void changePenColor(String color) {
         switch (color) {
             case "Black":
-                paint.setColor(Color.BLACK);
+                currentColor =Color.BLACK;
                 break;
             case "Blue":
-                paint.setColor(Color.BLUE);
+                currentColor = Color.BLUE;
                 break;
             case "Red":
-                paint.setColor(Color.RED);
+                currentColor = Color.RED;
                 break;
             case "Orange":
-                paint.setColor(Color.rgb(255, 165, 0));
+                currentColor = Color.rgb(255, 165, 0);
                 break;
             case "Yellow":
-                paint.setColor(Color.YELLOW);
+                currentColor = Color.YELLOW;
                 break;
             case "Dark Green":
-                paint.setColor(Color.rgb(0, 100, 0));
+                currentColor = Color.rgb(0, 100, 0);
                 break;
             case "Pink":
-                paint.setColor(Color.rgb(255, 192, 203));
+                currentColor = Color.rgb(255, 192, 203);
                 break;
             case "Cyan":
-                paint.setColor(Color.CYAN);
+                currentColor = Color.CYAN;
                 break;
         }
     }
@@ -75,9 +82,15 @@ public class CanvasView extends View
 
     public void startTouch(float x, float y)
     {
+//        path.reset();
+        path = new Path();
         path.moveTo(x, y);
         mX = x;
         mY = y;
+
+        // Add new path to list of paths and their colors
+        paths.add(path);
+        colors.add(currentColor);
     }
 
     public void moveTouch(float x, float y)
@@ -85,7 +98,7 @@ public class CanvasView extends View
         float dx = Math.abs(x-mX);
         float dy = Math.abs(y-mY);
 
-        if(dx >= TOLERANCE || dy >= TOLERANCE)
+        if(dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE)
         {
             path.quadTo(mX, mY, (x+mX)/2, (y+mY)/2);
             mX = x;
@@ -93,6 +106,8 @@ public class CanvasView extends View
 
         }
     }
+
+
 
     // Function to clear the canvas
 
@@ -129,8 +144,11 @@ public class CanvasView extends View
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawPath(path, paint);
-
+        // Draw all paths with their respective colors
+        for (int i = 0; i < paths.size(); i++) {
+            paint.setColor(colors.get(i));
+            canvas.drawPath(paths.get(i), paint);
+        }
     }
 
     @Override
@@ -154,7 +172,5 @@ public class CanvasView extends View
         }
         return true;
     }
-
-
 
 }
