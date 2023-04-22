@@ -46,7 +46,10 @@ public class CanvasView extends View
     public void changePenColor(String color) {
         switch (color) {
             case "Black":
-                currentColor =Color.BLACK;
+                currentColor = Color.BLACK;
+                break;
+            case "Brown":
+                currentColor = Color.rgb(79, 30, 14);
                 break;
             case "Blue":
                 currentColor = Color.BLUE;
@@ -71,6 +74,9 @@ public class CanvasView extends View
                 break;
             case "Pink":
                 currentColor = Color.rgb(250, 10, 174);
+                break;
+            case "Magenta":
+                currentColor = Color.rgb(212, 0, 255);
                 break;
             case "Purple":
                 currentColor = Color.rgb(128, 0, 128);
@@ -166,24 +172,37 @@ public class CanvasView extends View
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        // Get the x and y coordinates of the touch event
         float x = event.getX();
         float y = event.getY();
+        // Check the action of the touch event
         switch(event.getAction())
         {
+            // If the touch event is a down action
             case MotionEvent.ACTION_DOWN:
+                // Call the startTouch method and pass in the x and y coordinates
                 startTouch(x, y);
+                // Invalidate the view to trigger a redraw
                 invalidate();
                 break;
+            // If the touch event is a move action
             case MotionEvent.ACTION_MOVE:
+                // Call the moveTouch method and pass in the x and y coordinates
                 moveTouch(x, y);
+                // Invalidate the view to trigger a redraw
                 invalidate();
                 break;
+            // If the touch event is an up action
             case MotionEvent.ACTION_UP:
+                // Call the upTouch method
                 upTouch();
+                // Invalidate the view to trigger a redraw
                 invalidate();
                 break;
         }
+        // Return true to indicate that the event was handled
         return true;
     }
+
 
 }
