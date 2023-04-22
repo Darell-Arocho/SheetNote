@@ -70,7 +70,7 @@ public class CanvasView extends View
                 currentColor = Color.rgb(57, 252, 3);
                 break;
             case "Pink":
-                currentColor = Color.rgb(255, 192, 203);
+                currentColor = Color.rgb(250, 10, 174);
                 break;
             case "Purple":
                 currentColor = Color.rgb(128, 0, 128);
@@ -122,9 +122,12 @@ public class CanvasView extends View
 
     public void clearCanvas()
     {
-        path.reset();
+        paths.clear();
+        colors.clear(); // Clears all the colors from the array
+        bitmap.eraseColor(Color.TRANSPARENT);
         invalidate();
     }
+
 
     // Functions for increasing and decreasing pen size
     public void increasePenSize() {
