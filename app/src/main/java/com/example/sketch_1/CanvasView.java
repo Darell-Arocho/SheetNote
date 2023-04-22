@@ -26,6 +26,7 @@ public class CanvasView extends View
     private float mX, mY;
     private static final float TOUCH_TOLERANCE = 4;
 
+
     // Add variables to keep track of previous paths and their colors
     private List<Path> paths = new ArrayList<>();
     private List<Integer> colors = new ArrayList<>();
@@ -40,7 +41,6 @@ public class CanvasView extends View
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeJoin(Paint.Join.ROUND);
         paint.setStrokeWidth(4f);
-
     }
 
     public void changePenColor(String color) {
@@ -50,6 +50,9 @@ public class CanvasView extends View
                 break;
             case "Blue":
                 currentColor = Color.BLUE;
+                break;
+            case "Cyan":
+                currentColor = Color.CYAN;
                 break;
             case "Red":
                 currentColor = Color.RED;
@@ -63,12 +66,18 @@ public class CanvasView extends View
             case "Dark Green":
                 currentColor = Color.rgb(0, 100, 0);
                 break;
+            case "Light Green":
+                currentColor = Color.rgb(57, 252, 3);
+                break;
             case "Pink":
                 currentColor = Color.rgb(255, 192, 203);
                 break;
-            case "Cyan":
-                currentColor = Color.CYAN;
+            case "Purple":
+                currentColor = Color.rgb(128, 0, 128);
                 break;
+//            case "Eraser":
+//                currentColor = Color.WHITE;
+//                break;
         }
     }
 
@@ -77,7 +86,6 @@ public class CanvasView extends View
         super.onSizeChanged(w, h, oldw, oldh);
         bitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         canvas = new Canvas(bitmap);
-
     }
 
     public void startTouch(float x, float y)
@@ -109,6 +117,7 @@ public class CanvasView extends View
 
 
 
+
     // Function to clear the canvas
 
     public void clearCanvas()
@@ -131,9 +140,10 @@ public class CanvasView extends View
     }
 
     // Handles all color changes from this single method function
-    public void setPenColor(int color) {
-        paint.setColor(color);
-    }
+    // Not being used right now
+//    public void setPenColor(int color) {
+//        paint.setColor(color);
+//    }
 
 
     public void upTouch()

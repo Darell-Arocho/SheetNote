@@ -2,6 +2,7 @@ package com.example.sketch_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color; // imported using Alt + Enter for the color pallet
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         // Initializing the CanvasView object with id "mycanvas"
         canvasView = (CanvasView) findViewById(R.id.mycanvas);
 
         // Creating an array of strings to be used for the spinner
-        String[] colors = {"Black", "Blue", "Red", "Orange", "Yellow", "Dark Green", "Pink", "Cyan"};
+        String[] colors = {"Black", "Blue", "Cyan", "Red", "Orange", "Yellow", "Dark Green",
+                "Light Green", "Pink", "Purple"};
 
         // Initializing the spinner object with id "color_spinner"
         colorSpinner = findViewById(R.id.color_spinner);
