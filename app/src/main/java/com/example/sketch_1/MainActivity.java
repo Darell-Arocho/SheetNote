@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Creating an array of strings to be used for the spinner
         String[] colors = {"Black", "Blue", "Cyan", "Red", "Orange", "Yellow", "Dark Green",
-                "Light Green", "Pink", "Purple"};
+                "Light Green", "Pink", "Purple", "Eraser"};
 
         // Initializing the spinner object with id "color_spinner"
         colorSpinner = findViewById(R.id.color_spinner);

@@ -75,9 +75,9 @@ public class CanvasView extends View
             case "Purple":
                 currentColor = Color.rgb(128, 0, 128);
                 break;
-//            case "Eraser":
-//                currentColor = Color.WHITE;
-//                break;
+            case "Eraser":
+                currentColor = Color.WHITE;
+                break;
         }
     }
 
