@@ -2,7 +2,6 @@ package com.example.sketch_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color; // imported using Alt + Enter for the color pallet
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         // Initializing the CanvasView object with id "mycanvas"
         canvasView = (CanvasView) findViewById(R.id.mycanvas);

@@ -5,6 +5,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    <Button-->
+<!--        android:id="@+id/color_palette_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Select Color"-->
+<!--        android:onClick="showColorPaletteDialog"/>-->
+<!--    <include-->
+<!--        layout="@layout/activity_welcome"/>-->
+
     <com.example.sketch_1.CanvasView
         android:id="@+id/mycanvas"
         android:layout_width="match_parent"

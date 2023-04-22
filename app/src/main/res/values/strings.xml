@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Sketch_1</string>
+    <string name="app_name">SheetNote</string>
+    <string name="logo_app">logo app</string>
+    <string name="start">Let\'s get started!</string>
 </resources>
