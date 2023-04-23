@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-<!--    <Button-->
-<!--        android:id="@+id/color_palette_button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Select Color"-->
-<!--        android:onClick="showColorPaletteDialog"/>-->
-<!--    <include-->
-<!--        layout="@layout/activity_welcome"/>-->
+    <!--    <Button-->
+    <!--        android:id="@+id/color_palette_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Select Color"-->
+    <!--        android:onClick="showColorPaletteDialog"/>-->
+    <!--    <include-->
+    <!--        layout="@layout/activity_welcome"/>-->
 
     <com.example.sketch_1.CanvasView
         android:id="@+id/mycanvas"
@@ -55,27 +53,27 @@
         android:text="-" />
 
     <!--Eraser button-->
-<!--    <Button-->
-<!--        android:id="@+id/eraser"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginEnd="162dp"-->
-<!--        android:layout_marginBottom="58dp"-->
-<!--        android:onClick="eraser"-->
-<!--        android:text="Eraser" />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/eraser"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginEnd="162dp"-->
+    <!--        android:layout_marginBottom="58dp"-->
+    <!--        android:onClick="eraser"-->
+    <!--        android:text="Eraser" />-->
 
 
     <Button
-        android:id="@+id/page2"
+        android:id="@+id/back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="130dp"
-        android:layout_marginBottom="61dp"
-        android:text="Go to page 2" />
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="59dp"
+        android:text="Go back" />
 
     <Spinner
         android:id="@+id/color_spinner"
@@ -85,8 +83,5 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="1178dp" />
-
-
-
 
 </RelativeLayout>

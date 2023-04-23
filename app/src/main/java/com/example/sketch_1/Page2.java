@@ -1,27 +1,30 @@
 package com.example.sketch_1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color; // imported using Alt + Enter for the color pallet
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter; // imported using Alt + Enter for the spinner
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.annotation.Nullable;
+
+public class Page2 extends Activity {
 
     CanvasView canvasView; // declaring an instance of CanvasView
 
     private Spinner colorSpinner; // declaring a spinner object
-    Button btn1;
+
+    Button btn_back;
+    Button btn_page3;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.second_page);
 
         // Initializing the CanvasView object with id "mycanvas"
         canvasView = (CanvasView) findViewById(R.id.mycanvas);
@@ -54,13 +57,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn1 = (Button) findViewById(R.id.page2);
+        btn_back = (Button) findViewById(R.id.back);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, Page2.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(Page2.this, MainActivity.class);
+                startActivity(intent2);
+            }
+        });
+
+        btn_page3 = (Button) findViewById(R.id.page3);
+
+        btn_page3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(Page2.this, Page3.class);
+                startActivity(intent3);
             }
         });
     }
@@ -78,6 +91,4 @@ public class MainActivity extends AppCompatActivity {
     public void decreasePenSize(View v) {
         canvasView.decreasePenSize();
     }
-
-
 }
