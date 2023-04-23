@@ -2,4 +2,11 @@
     <string name="app_name">SheetNote</string>
     <string name="logo_app">logo app</string>
     <string name="start">Let\'s get started!</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click to register</string>
+    <string name="logout">Logout</string>
 </resources>
