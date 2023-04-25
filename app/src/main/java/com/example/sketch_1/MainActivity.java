@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Spinner colorSpinner; // declaring a spinner object
     Button btn1;
+//    Button closeBtn;
 
+    // Initializes the activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +65,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
+
+//        closeBtn = (Button) findViewById(R.id.clsBtn);
+//
+//        closeBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                 finish();
+//                 android.os.Process.killProcess(android.os.Process.myPid());
+//                 System.exit(1);
+//            }
+//        });
     }
 
     // View was added through Alt + Enter
@@ -79,5 +92,6 @@ public class MainActivity extends AppCompatActivity {
         canvasView.decreasePenSize();
     }
 
+//    public void showTextBox(View v){ canvasView.showTextBox();}
 
 }

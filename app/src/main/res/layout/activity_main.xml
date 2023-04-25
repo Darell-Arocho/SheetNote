@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="41dp" />
+        android:layout_marginTop="40dp" />
 
     <Button
         android:id="@+id/button"
@@ -86,7 +86,33 @@
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="1178dp" />
 
+<!--    &lt;!&ndash;Text box button&ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/btn_text_box"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="273dp"-->
+<!--        android:layout_marginBottom="64dp"-->
+<!--        android:onClick="showTextBox"-->
+<!--        android:text="T" />-->
 
+<!--    <LinearLayout-->
+<!--        android:id="@+id/btn_text_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:onClick="showTextBox"/>-->
 
+<!--    <Button-->
+<!--        android:id="@+id/clsBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="262dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:text="Close App" />-->
 
 </RelativeLayout>
