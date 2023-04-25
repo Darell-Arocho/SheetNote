@@ -9,4 +9,9 @@
     <string name="click_to_login">Click to login</string>
     <string name="click_to_register">Click to register</string>
     <string name="logout">Logout</string>
+    <string name="clear_canvas">Clear Canvas</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="go_to_page_2">Go to page 2</string>
+    <string name="print">Print</string>
 </resources>

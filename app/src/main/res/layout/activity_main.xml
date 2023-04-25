@@ -30,7 +30,8 @@
         android:layout_marginEnd="135dp"
         android:layout_marginBottom="7dp"
         android:onClick="clearCanvas"
-        android:text="Clear Canvas" />
+        android:text="@string/clear_canvas"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/btn_increase_pen_size"
@@ -41,7 +42,8 @@
         android:layout_marginEnd="274dp"
         android:layout_marginBottom="5dp"
         android:onClick="increasePenSize"
-        android:text="+" />
+        android:text="@string/increase"
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/btn_decrease_pen_size"
@@ -52,7 +54,8 @@
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="8dp"
         android:onClick="decreasePenSize"
-        android:text="-" />
+        android:text="@string/decrease"
+        android:textColor="@color/black" />
 
     <!--Eraser button-->
 <!--    <Button-->
@@ -75,7 +78,20 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="130dp"
         android:layout_marginBottom="61dp"
-        android:text="Go to page 2" />
+        android:text="@string/go_to_page_2"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/print_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/print"
+        android:textColor="@color/black" />
 
     <Spinner
         android:id="@+id/color_spinner"
