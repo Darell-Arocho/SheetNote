@@ -18,7 +18,7 @@ public class Page3 extends Activity {
 
     Button btn_back;
 
-
+    // Initializes the activity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

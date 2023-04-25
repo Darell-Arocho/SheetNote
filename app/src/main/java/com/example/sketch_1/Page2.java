@@ -20,7 +20,7 @@ public class Page2 extends Activity {
     Button btn_back;
     Button btn_page3;
 
-
+    // Initializes the activity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
