@@ -17,7 +17,7 @@
             android:id="@+id/page_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add New Note"
+            android:text="Add New Notebook"
             android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold" />
