@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Sketch_1"
         tools:targetApi="31">
         <activity
+            android:name=".NoteDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoteBooks"
+            android:exported="false" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
@@ -28,9 +34,7 @@
         </activity>
         <activity
             android:name=".WelcomeActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Page2" />
         <activity android:name=".Page3" />

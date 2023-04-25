@@ -60,7 +60,7 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Do something when the button is clicked
-                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, NoteBooks.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Do something when the logo is clicked
-                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, NoteBooks.class);
                 startActivity(intent);
                 finish();
             }
