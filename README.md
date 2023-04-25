@@ -2,7 +2,7 @@
 Electronic Notebook Project for our Software Engineering Class.
 The Group Members consist of **Amarilys, Harry and Darell**
 
-Time spent: **30** hours spent in total
+Time spent: **30+** hours spent in total
 
 ## Summary
 
@@ -13,20 +13,21 @@ If I had to describe this project in three (3) emojis, they would be: **emojis h
 
 The following REQUIRED features are completed:
 
-- [ ] Provide two methods for selecting a class: choosing the class from an ordered list of available classes or searching by topic.
-- [ ] See a class. Classes range in size from a few lines to multiple screens.
-- [ ] Select part of a class and store it in memory as a note.
-- [ ] View stored notes.
-- [ ] Print a class or a note
+- [parcial] Provide two methods for selecting a class: choosing the class from an ordered list of available classes or searching by topic.
+   The search by topic is not completly implemented. Is something to improve in the future.
+- [x] See a class. Classes range in size from a few lines to multiple screens.
+- [x] Select part of a class and store it in memory as a note.
+- [x] View stored notes.
+- [x] Print a class or a note
 
 The following STRETCH features are implemented:
 
 - [ ] Re-brand the app by modifying the UI
-- [ ] Modify the profile image by uploading a new image drawable
+- [ ] Modify the profile image by uploading a new image. (Account settings)
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve the app!
+- [x] Authenticate
 
 ## Video Demo
 
