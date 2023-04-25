@@ -13,10 +13,12 @@ import android.print.PrintAttributes;
 import android.print.PrintDocumentAdapter;
 import android.print.PrintJob;
 import android.print.PrintManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter; // imported using Alt + Enter for the spinner
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 import com.karumi.dexter.Dexter;
@@ -36,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private List<CanvasView> canvasList = new ArrayList<>();
 
     private Spinner colorSpinner; // declaring a spinner object
-    Button btn1;
-//    Button closeBtn;
+    ImageButton btn1;
 
     // Initializes the activity
     @Override
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn1 = (Button) findViewById(R.id.page2);
+        btn1 = (ImageButton) findViewById(R.id.page2);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,18 +87,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        closeBtn = (Button) findViewById(R.id.clsBtn);
-//
-//        closeBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                 finish();
-//                 android.os.Process.killProcess(android.os.Process.myPid());
-//                 System.exit(1);
-//            }
-//        });
 
-        Button printButton = findViewById(R.id.print_button);
+        ImageButton printButton = findViewById(R.id.print_button);
         Dexter.withActivity(this).withPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse response) {

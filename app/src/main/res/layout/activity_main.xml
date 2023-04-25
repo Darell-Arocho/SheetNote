@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
 <!--    <Button-->
@@ -32,6 +33,7 @@
         android:onClick="clearCanvas"
         android:text="@string/clear_canvas"
         android:textColor="@color/black"/>
+
 
     <Button
         android:id="@+id/btn_increase_pen_size"
@@ -70,27 +72,29 @@
 <!--        android:text="Eraser" />-->
 
 
-    <Button
+    <ImageButton
         android:id="@+id/page2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="130dp"
         android:layout_marginBottom="61dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_next_foreground"
         android:text="@string/go_to_page_2"
         android:textColor="@color/black"/>
 
 
-    <Button
+    <ImageButton
         android:id="@+id/print_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="272dp"
         android:layout_marginBottom="60dp"
-        android:text="@string/print"
+        android:src="@drawable/ic_print_black_foreground"
         android:textColor="@color/black" />
 
     <Spinner

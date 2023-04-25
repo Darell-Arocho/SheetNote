@@ -14,4 +14,7 @@
     <string name="decrease">-</string>
     <string name="go_to_page_2">Go to page 2</string>
     <string name="print">Print</string>
+    <string name="a_tiny_android_icon">Power button</string>
+    <string name="notebooks">Notebooks</string>
+    <string name="add_a_new_notebook">add a new notebook</string>
 </resources>

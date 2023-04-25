@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
@@ -29,6 +31,13 @@ public class NoteBooks extends AppCompatActivity {
 
         // Set up an OnClickListener for the addNoteBtn to open the NoteDetailsActivity when clicked
         addNoteBtn.setOnClickListener((v)-> startActivity(new Intent(NoteBooks.this, NoteDetailsActivity.class)));
+        ImageButton powerButton = (ImageButton) findViewById(R.id.powerBtn);
+        powerButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.d("ON/OFF", "User tapped the powerbutton");
+                finishAffinity();
+            }
+        });
     }
 
     // Method to configure the RecyclerView and its adapter
